@@ -18,7 +18,7 @@ from typing import Optional
 
 STARTING_BALANCE = 1000.0       # стартовый баланс в симуляции ($)
 BET_SIZE = 10.0                 # размер одной ставки ($)
-MAX_PROB_THRESHOLD = 0.03       # ставим только если вероятность YES < 3%
+MAX_PROB_THRESHOLD = 0.08       # ставим только если вероятность YES < 8%
 MIN_VOLUME = 1000.0             # минимальный объём рынка ($)
 SCAN_INTERVAL_SEC = 30          # пауза между сканированиями (сек)
 MAX_BETS_PER_SCAN = 5           # максимум ставок за один скан
