@@ -147,6 +147,8 @@ def find_low_prob_markets(markets: list[dict]) -> list[dict]:
             if yes_price <= 0.15:
                 print(f"  [DEBUG] YES={yes_price:.3f} vol=${volume:.0f} | {market.get('question','')[:50]}")
 
+            if yes_price <= 0.15:
+                print(f"  [DEBUG] YES={yes_price:.3f} | {market.get('question','')[:50]}")
             if yes_price <= MAX_PROB_THRESHOLD:
                 candidates.append({
                     "market_id": market.get("id", ""),
